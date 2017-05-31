@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Slideshow / Carousel</title>
+	<style type="text/css">
+		body{
+			background: #3ABD84;
+		}
+		.titulo{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		xmp{
+			color: blue;
+		}
+		h2{
+			text-align: center;
+		}
+
+		#slideshow1{
+			margin-top: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Slideshow / Carousel</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel slide" data-ride="carousel" id="slideshow1">
+					<!--indicadores-->
+
+					<ol class="carousel-indicators">
+						<li data-target="#slideshow1" data-slide-to="0" class="active"></li>
+						<li data-target="#slideshow1" data-slide-to="1"></li>
+						<li data-target="#slideshow1" data-slide-to="2"></li>
+					</ol>
+
+					<!--Contenedor de Slides-->
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="http://lorempixel.com/1200/400/nature/1">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="http://lorempixel.com/1200/400/nature/2">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="http://lorempixel.com/1200/400/nature/3">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<!--Controles-->
+
+						<a href="#slideshow1" class="left carousel-control" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a href="#slideshow1" class="right carousel-control" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="container">
+ 	 <h2>Simple Collapsible</h2>
+  	 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Código HTML</button>
+ 	 <div id="demo" class="collapse">
+  		<xmp>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="carousel slide" data-ride="carousel" id="slideshow1">
+					<!--indicadores-->
+
+					<ol class="carousel-indicators">
+						<li data-target="#slideshow1" data-slide-to="0" class="active"></li>
+						<li data-target="#slideshow1" data-slide-to="1"></li>
+						<li data-target="#slideshow1" data-slide-to="2"></li>
+					</ol>
+
+					<!--Contenedor de Slides-->
+
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="http://lorempixel.com/1200/400/nature/1">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="http://lorempixel.com/1200/400/nature/2">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<div class="item">
+							<img src="http://lorempixel.com/1200/400/nature/3">
+							<div class="carousel-caption">
+								<p>Texto sobre la imagen.</p>
+							</div>
+						</div>
+
+						<!--Controles-->
+
+						<a href="#slideshow1" class="left carousel-control" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a href="#slideshow1" class="right carousel-control" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  		</xmp>
+  	</div>
+</div>
+</body>
+</html>

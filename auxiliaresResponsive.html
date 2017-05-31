@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Clases Auxiliares Orientadas al Diseño Responsiv</title>
+	<style type="text/css">
+		body{
+			background: #3ABD84;
+		}
+		.titulo{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		xmp{
+			color: blue;
+		}
+		h2{
+			text-align: center;
+		}
+		img {
+			margin-top: 40px;
+		}
+		.caja {
+			background: #21295c;
+			color: white;
+			padding: 10px;
+			margin: 20px 0;
+		}
+		th{
+			font-size:20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Clases Auxiliares Orientadas al Diseño Responsiv</h1>
+	<table class="table table-bordered table-hover">
+		<tr>
+			<th>Class</th>
+			<th>Visible en</th>
+		</tr>
+		<tr>
+			<td>.visible-xs</td>
+			<td>Visible solo en dispositivos extra pequeños</td>
+		</tr>
+		<tr>
+			<td>.visible-sm</td>
+			<td>Visible solo en dispositivos extra pequeños</td>
+		</tr>
+		<tr>
+			<td>.visible-md</td>
+			<td>Visible solo en dispositivos extra medianos</td>
+		</tr>
+		<tr>
+			<td>.visible-lg</td>
+			<td>Visible solo en dispositivos extra largos</td>
+		</tr>
+		<tr>
+			<td>.hidden-xs</td>
+			<td>Visible solo en dispositivos extra pequeños</td>
+		</tr>
+		<tr>
+			<td>.hidden-sm</td>
+			<td>Visible solo en dispositivos pequeños</td>
+		</tr>
+		<tr>
+			<td>.hidden-md</td>
+			<td>Visible solo en dispositivos medianos</td>
+		</tr>
+		<tr>
+			<td>.hidden-lg</td>
+			<td>Visible solo en dispositivos largos</td>
+		</tr>
+	</table>
+	<div class="container">
+		<div class="row">
+		<h2>Visibles a diferentes tamaños</h2>
+			<div class="caja cl-sm-12">
+				<h2 class="visible-xs">Tamaño extra pequeño</h2>
+				<h2 class="visible-sm">Tamaño pequeño</h2>
+				<h2 class="visible-md">Tamaño mediano</h2>
+				<h2 class="visible-lg">Tamaño largo</h2>
+			</div>
+			<xmp>
+			<div class="caja cl-sm-12">
+				<h2 class="visible-xs">Tamaño extra pequeño</h2>
+				<h2 class="visible-sm">Tamaño pequeño</h2>
+				<h2 class="visible-md">Tamaño mediano</h2>
+				<h2 class="visible-lg">Tamaño largo</h2>
+			</div>
+			</xmp>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+		<h2>Ocultas a diferentes tamaños</h2>
+			<div class="caja col-sm-12">
+				<h2 class="hidden-xs">Tamaño extra pequeño</h2>
+			</div>
+
+			<div class="caja col-sm-12">
+				<h2 class="hidden-sm">Tamaño pequeño</h2>
+			</div>
+
+			<div class="caja col-sm-12">
+				<h2 class="hidden-md">Tamaño mediano</h2>
+			</div>
+
+			<div class="caja col-sm-12">
+				<h2 class="hidden-lg">Tamaño largo</h2>
+			</div>
+			<div class="clearfix"></div>
+			<xmp>
+			<div class="caja col-sm-12">
+				<h2 class="hidden-xs">Tamaño extra pequeño</h2>
+				<h2 class="hidden-sm">Tamaño pequeño</h2>
+				<h2 class="hidden-md">Tamaño mediano</h2>
+				<h2 class="hidden-lg">Tamaño largo</h2>
+			</div>
+			</xmp>
+		</div>
+	</div>
+
+</body>	
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<style type="text/css">
+		p {
+			font-size:18px;
+			color: blue;
+			margin:10px;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 50px;
+			background: #000;
+			color: white;
+		}
+		h3{
+			text-decoration: underline;
+		}
+		xmp {
+			color: green;
+		}
+		.fondo {
+			background: #ccc;
+			border: 1px solid black;
+		}
+	</style>
+
+	<title></title>
+</head>
+<body>
+	<h1>Bootstrap</h1>
+	<p>Bootstrap basa su diseño en un sistema de columnas, divide toda la página en 12 columnas, la ventaja que ofrece Bootstrap es que sin necesidad de usar los Media Querys podemos indicar el numero de columnas que debe emplear segun el dispoistivo que acceda a la página.</p>
+	<p>Los Media Querys ya vienen definidos en Bootstrap por eso nosotros no los vamos a usar, a continuación mostraremos los Media Querys utilizados por Bootstrap.</p>
+	<h4>Dispositivos peuqeños Como móviles, anchura menor a 768ppx</h4>
+	<p>@media (min-width: @screen-xs-min){...}</p>
+	<h4>Dispositivos pequeños como tablets, anchura mayor o igual a 768px</h4>
+	<p>@media (min-width: @screen-sm-min){...}</p>
+	<h4>Dispositivos medianos como ordenadores, anchura mayor o igual a 992px</h4>
+	<p>@media (min-width: @screen-md-min){...}</p>
+	<h4>Dispositivos grandes como ordenadores, anchura mayor o igual a 1200px</h4>
+	<p>@media (min-width: @screen-lg-min){...}</p>
+	<h4>En ocasiones, también se utilizan las siguientes media queries que definen la propiedad max-width y permiten restringir los dispositivos a los que se aplican los estilos CSS:</h4>
+	<p>@media (max-width: @screen-xs-max) { ... }</p>
+	<p>@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }</p>
+	<p>@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }</p>
+	<p>@media (min-width: @screen-lg-min) { ... }</p>
+	<br>
+	<h2>Ejemplos de rejillas con Bootstrap</h2>
+
+	<p>En este ejemplo tenemos 12 elementos, los cuales cada uno abarca una columna.</p>
+	<div class="row">
+			<div class="fondo col-md-1">.col-md-1</div>
+ 			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+ 			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+		</div>
+	<xmp>
+		<div class="row">
+			<div class="fondo col-md-1">.col-md-1</div>
+ 			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+ 			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+  			<div class="fondo col-md-1">.col-md-1</div>
+		</div>
+	</xmp>
+	<p>Ahora vamos a colocar dos elementos, uno abarcará 8 columnas y otro 4.</p>
+	<div class="row">
+  		<div class="fondo col-md-8">.col-md-8</div>
+  		<div class="fondo col-md-4">.col-md-4</div>
+	</div>
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-md-8">.col-md-8</div>
+  			<div class="fondo col-md-4">.col-md-4</div>
+		</div>
+	</xmp>
+	<p>Ahora tres elementos y cada uno abarcará 4 columnas.</p>
+	<div class="row">
+ 		 <div class="fondo col-md-4">.col-md-4</div>
+  		<div class="fondo col-md-4">.col-md-4</div>
+  		<div class="fondo col-md-4">.col-md-4</div>
+	</div>
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-md-4">.col-md-4</div>
+  			<div class="fondo col-md-4">.col-md-4</div>
+  			<div class="fondo col-md-4">.col-md-4</div>
+		</div>
+	</xmp>
+	<p>Y por último dos elemntos que abarcan 6 columnas cada uno.</p>
+	<div class="row">
+  		<div class="fondo col-md-6">.col-md-6</div>
+  		<div class="fondo col-md-6">.col-md-6</div>
+	</div>
+	<xmp>
+		<div class="row">
+ 			<div class="fondo col-md-6">.col-md-6</div>
+  			<div class="fondo col-md-6">.col-md-6</div>
+		</div>
+	</xmp>
+	<p>Todos los ejemplos anteriores estaría orientados a ordenadores con un ancho superior o igual a 992px.</p>
+
+	<h3>Ejemplo para móviles y ordenadores</h3>
+	<p>En el siguiente ejemplo, en ordenadores cada elemento ocupará uno 8 columnas y el otro 4. En móviles el primero ocupará 12 columnas y el segundo 6, para hacer la prueba reduce el tamaño de la pantalla.</p>
+	<div class="row">
+  		<div class="fondo col-xs-12 col-md-8">.col-xs-12 col-md-8</div>
+  		<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	</div>
+
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-xs-12 col-md-8">.col-xs-12 col-md-8</div>
+  			<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+	</xmp>
+	<p>Tres elementos, en ordenador cada uno ocupa 4 columnas. En móvil cada uno ocupa 6 columnas.</p>
+	<div class="row">
+  		<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  		<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  		<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	</div>
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  			<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+  			<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+	</xmp>
+	<p>Las columnas siempre ocupan la mitad de la pantalla, tanto en móvil como en ordenador.</p>
+	<div class="row">
+  		<div class="fondo col-xs-6">.col-xs-6</div>
+  		<div class="fondo col-xs-6">.col-xs-6</div>
+	</div>
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-xs-6">.col-xs-6</div>
+  			<div class="fondo col-xs-6">.col-xs-6</div>
+		</div>
+	</xmp>
+	<h3>Ejemplo de rejilla para móviles, tablets y ordenadores</h3>
+	<p>A partir del ejemplo anterior, puedes hacer que el layout sea todavía más dinámico añadiendo las clases .col-sm-* pensadas para tablets:</p>
+	<div class="row">
+ 		 <div class="fondo col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+ 		 <div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	</div>
+	<xmp>
+		<div class="row">
+ 		 	<div class="fondo col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+ 		 	<div class="fondo col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+		</div>
+	</xmp>
+	<div class="row">
+  		<div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+ 		 <div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+ 
+  <!-- Código opcional para limpiar las columnas XS en caso de que el
+       contenido de todas las columnas no coincida en altura -->
+  		<div class="clearfix visible-xs"></div>
+  		<div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+	</div>
+	<xmp>
+		<div class="row">
+  			<div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+ 			 <div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+ 
+ 	 <!-- Código opcional para limpiar las columnas XS en caso de que el
+       contenido de todas las columnas no coincida en altura -->
+  			<div class="clearfix visible-xs"></div>
+  			<div class="fondo col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+		</div>
+	</xmp>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

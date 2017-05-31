@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Formularios Parte 2</title>
+	<style type="text/css">
+		body{
+			background: #3ABD84;
+		}
+		.titulo{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		xmp{
+			color: blue;
+		}
+		h2{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Formularios Parte 2</h1>
+	<br>
+	<h2>Checkbox y Radios</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form action="">
+				<h3>Checkbox</h3>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="">
+							Lorem ipsum dolor sit amet, consectetur.
+						</label>
+					</div>
+					<div class="checkbox disabled">
+						<label>
+							<input type="checkbox" value="" disabled>
+							Consectetur adipisicing elit. Rerum, provident.
+						</label>
+					</div>
+					<xmp>
+						<div class="checkbox">
+							<label>
+							<input type="checkbox" value="">
+							Lorem ipsum dolor sit amet, consectetur.
+							</label>
+						</div>
+						<div class="checkbox disabled">
+							<label>
+							<input type="checkbox" value="" disabled>
+							Consectetur adipisicing elit. Rerum, provident.
+							</label>
+						</div>
+					</xmp>
+
+				<h3>Radios</h3>
+					<div class="radio">
+						<label>
+							<input type="radio" name="sexo" value="">
+							Hombre.
+						</label>
+					</div>
+					<div class="radio" disabled>
+						<label>
+							<input type="radio" name="sexo" value="" disabled>
+							Mujer.
+						</label>
+					</div>
+				<xmp>
+					<div class="radio">
+						<label>
+						<input type="radio" name="sexo" value="">
+						Hombre.
+						</label>
+					</div>
+					<div class="radio" disabled>
+						<label>
+						<input type="radio" name="sexo" value="" disabled>
+						Mujer.
+						</label>
+					</div>
+				</xmp>
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h2>Inline Chekboxes y Radios</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form action="">
+				<h3>Checkbox</h3>
+						<label class="checkbox-inline">
+							<input type="checkbox" value="">
+							Lorem ipsum dolor sit amet, consectetur.
+						</label>
+						<label class="checkbox-inline">
+							<input type="checkbox" value="">
+							Consectetur adipisicing elit. Rerum, provident.
+						</label>
+					<xmp>
+
+							<label class="checkbox-inline">
+							<input type="checkbox" value="">
+							Lorem ipsum dolor sit amet, consectetur.
+							</label>
+
+
+							<label class="checkbox-inline">
+							<input type="checkbox" value="">
+							Consectetur adipisicing elit. Rerum, provident.
+							</label>
+
+					</xmp>
+
+				<h3>Radios</h3>
+						<label class="radio-inline">
+							<input type="radio" name="sexo" value="">
+							Hombre.
+						</label>
+						<label class="radio-inline">
+							<input type="radio" name="sexo" value="">
+							Mujer.
+						</label>
+				<xmp>
+						<label class="radio-inline">
+						<input type="radio" name="sexo" value="">
+						Hombre.
+						</label>
+						<label class="radio-inline">
+						<input type="radio" name="sexo" value="">
+						Mujer.
+						</label>
+				</xmp>
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<h2>Select</h2>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form action="">
+					<select class="form-control" name="pais" id="pais">
+						<option value="España">España</option>
+						<option value="Francia">Francia</option>
+						<option value="Portugal">Portugal</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</div>
+	<xmp>
+		<form action="">
+			<select class="form-control" name="pais" id="pais">
+				<option value="España">España</option>
+				<option value="Francia">Francia</option>
+				<option value="Portugal">Portugal</option>
+			</select>
+		</form>
+	</xmp>
+	<hr>
+	<h2>Inputs</h2>
+	<br>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form action="">
+					<h3>Readonly</h3>	
+					<div class="form-gruop">
+						<input class="form-control" type="text" name="" placeholder="input" readonly>
+					<xmp>
+						<div class="form-gruop">
+							<input class="form-control" type="text" name="" placeholder="input" readonly>
+						</div>
+					</xmp>
+					</div>
+					<h3>Clase "has-warning"</h3>
+					<div class="form-gruop has-warning">
+						<input class="form-control" type="text" name="" placeholder="input">
+					</div>
+					<xmp>
+						<div class="form-gruop has-warning">
+							<input class="form-control" type="text" name="" placeholder="input">
+						</div>
+					</xmp>
+					<h3>Clase "has-error"</h3>
+					<div class="form-gruop has-error">
+						<input class="form-control" type="text" name="" placeholder="input" >
+					</div>
+					<xmp>
+						<div class="form-gruop has-error">
+							<input class="form-control" type="text" name="" placeholder="input" >
+						</div>
+					</xmp>
+					<h3>Clase "has-sucess"</h3>
+					<div class="form-gruop has-success">
+						<input class="form-control" type="text" name="" placeholder="input">
+					</div>
+					<xmp>
+						<div class="form-gruop has-success">
+							<input class="form-control" type="text" name="" placeholder="input">
+						</div>
+					</xmp>
+					<h3>Clase "has-feedback"</h3>
+					<div class="form-gruop has-feedback">
+						<input class="form-control" type="text" name="" placeholder="input">
+					</div>
+					<xmp>
+						<div class="form-gruop has-feedback">
+							<input class="form-control" type="text" name="" placeholder="input">
+						</div>
+					</xmp>
+					<h3>Clase "has-warning"</h3>
+					<div class="form-gruop has-warning">
+						<input class="form-control" type="text" name="" placeholder="input">
+					</div>
+					<xmp>
+						<div class="form-gruop has-warning">
+							<input class="form-control" type="text" name="" placeholder="input">
+						</div>
+					</xmp>
+				</form>		
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Acordeón</title>
+	<style type="text/css">
+		body{
+			background: #3ABD84;
+		}
+		.titulo{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		xmp{
+			color: blue;
+		}
+		h2{
+			text-align: center;
+		}
+		.menu{
+			margin-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Acordeón</h1>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" id="acordeon">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading1">
+							<h4 class="panel-title">
+								<a href="#colapsabe1" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #1
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe1" class="panel-collapse collapse in" arial-labelledby="heading1">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading2">
+							<h4 class="panel-title">
+								<a href="#colapsabe2" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #2
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe2" class="panel-collapse collapse in" arial-labelledby="heading2">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading3">
+							<h4 class="panel-title">
+								<a href="#colapsabe3" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #3
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe3" class="panel-collapse collapse in" arial-labelledby="heading3">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!--Bóton Collapsabe-->
+
+
+
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Código HTML</button>
+  <div id="demo" class="collapse">
+	<xmp>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" id="acordeon">
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading1">
+							<h4 class="panel-title">
+								<a href="#colapsabe1" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #1
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe1" class="panel-collapse collapse in" arial-labelledby="heading1">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading2">
+							<h4 class="panel-title">
+								<a href="#colapsabe2" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #2
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe2" class="panel-collapse collapse in" arial-labelledby="heading2">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading" id="heading3">
+							<h4 class="panel-title">
+								<a href="#colapsabe3" data-toggle="collapse" data-parent="#acordeon">
+									Elemento #3
+								</a>
+							</h4>
+						</div>
+						<div id="colapsabe3" class="panel-collapse collapse in" arial-labelledby="heading3">
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum aspernatur dolorum sapiente, beatae dolore accusantium, sit perspiciatis molestias, assumenda exercitationem sequi ex earum odit. Ut consequuntur maxime natus fugit numquam.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</xmp>
+  </div>
+</div>
+
+<hr>
+<h2>Código del Botón</h2>
+<xmp>
+<div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Código HTML</button>
+  <div id="demo" class="collapse">
+  <!--Texto O lo Que Tu Quieras-->
+  </div>
+</div>
+</xmp>
+<hr>
+</body>
+</html>

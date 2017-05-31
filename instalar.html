@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Como preparar todo para trabajar con Bootstrap</title>
+	<style type="text/css">
+		body{
+			background: #f2f2f2;
+			font-size: 18px;
+		}
+		h1{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		p{
+			color:blue;
+		}
+
+		a{
+			text-decoration: none;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Como preparar todo para trabajar con Bootstrap</h1>
+	
+	<h2>Descargar Archivos y Preparar Carpetas</h2>
+
+	<p>Lo primero que debemos hacer es dirigirnos a la página de bootstrap y descargarnoslo.</p>
+	<a target="_blank" href="http://getbootstrap.com/">Ir a Bootstrap.</a>
+	<p>También debemos descargar JQuery ya que Bootstrap trabaja con JQuery.</p>
+	<a target="_blank" href="https://jquery.com/">Ir a JQuery</a>
+	<p>Descomprimimos el rar de bootstrap y nos quedarán 3 carpetas, CSS, JS y fonts.</p>
+	<p>Copiamos el archivo descargado de JQuery en la carpeta de js.</p>
+	<p>Ahora ya tenemos todos los archivos ncesarios y las carpetas posicionadas para enpezar a trabajar en nuestro código.</p>
+
+	<h2>Enlaces a los CSS y JS</h2>
+	<p>Ahora debemos enlazar en el head de nuestra página los estilos CSS y los archivos JS</p>
+	<p>Antes de nada debemos agregar el "meta Viewport"</p>
+	<xmp>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	</xmp>
+	<p>Esta parte es muy importante y no debemos olvidarnos nunca de agregar nuestro meta viewport, para que podamos trabajar con diseños responsive.</p>
+	<p>Ahora debemos enlazar los estilos CSS, el archivo que vamos a enlazar se encuentra dentro de la carpeta CSS y se llama "bootstrap.min.css"</p>
+	<xmp>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</xmp>
+	<p>Ahora debemos agregar los enlaces a nuestros archivos JS, el primero que agregaremos sera el archivo JQuery y posteriormente el de Bootstrap, en ese orden. Si vamos a añadir algun archivo con nuestros propios estilos CSS o algun archivo JS, estos deben colocarse despues de los que vamos a meter ahora aquí.</p>
+	<p>Quedaría asi:</p>
+	<xmp>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</xmp>
+	<p>Así es como debería quedar todo nuestro Header:</p>
+	<xmp>
+		<!DOCTYPE html>
+		<html lang="es">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<title>bootstrap</title>
+		</head>
+		<body>
+
+		</body>
+		</html>	
+	</xmp>
+	<p>Y bien, ya tenemos todo listo para empezar a trabajar con Bootstrap.</p>
+</body>
+</html>

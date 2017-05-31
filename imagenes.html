@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<title>Trabajando con Imágenes</title>
+	<style type="text/css">
+		body{
+			background: #3ABD84;
+		}
+		.titulo{
+			text-align: center;
+			background: #000;
+			color: white;
+		}
+		xmp{
+			color: blue;
+		}
+		h2{
+			text-align: center;
+		}
+		img {
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="titulo">Trabajando con Imágenes</h1>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-4">
+				<img class="img-rounded" src="http://lorempixel.com/200/200" alt="">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle" src="http://lorempixel.com/200/200" alt="">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-thumbnail" src="http://lorempixel.com/200/200" alt="">
+			</div>
+		</div>
+	</div>
+	<xmp>
+		<img class="img-rounded" src="http://lorempixel.com/200/200" alt="">
+		<img class="img-circle" src="http://lorempixel.com/200/200" alt="">
+		<img class="img-thumbnail" src="http://lorempixel.com/200/200" alt="">
+	</xmp>
+	<h2>Imagenes Responsive</h2>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-sm-4">
+				<img class="img-rounded img-responsive" src="http://lorempixel.com/600/600" alt="">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-circle img-responsive" src="http://lorempixel.com/600/600" alt="">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-thumbnail img-responsive" src="http://lorempixel.com/600/600" alt="">
+			</div>
+		</div>
+	</div>
+	<xmp>
+		<img class="img-rounded img-responsive" src="http://lorempixel.com/600/600" alt="">
+		<img class="img-circle img-responsive" src="http://lorempixel.com/600/600" alt="">
+		<img class="img-thumbnail img-responsive" src="http://lorempixel.com/600/600" alt="">
+	</xmp>	
+	<h2>Centrando Imágenes</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img class="center-block" src="http://lorempixel.com/400/400" alt="">
+			</div>
+		</div>
+	</div>
+	<xmp>
+		<img class="center-block" src="http://lorempixel.com/400/400" alt="">
+	</xmp>
+</body>
+</html>
